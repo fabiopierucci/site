@@ -8,7 +8,7 @@
 
 // partials
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700|Playfair+Display:900');
 
 // font-awesome
 @import "./node_modules/@fortawesome/fontawesome-free/less/fontawesome.less";
@@ -32,7 +32,8 @@ body {
     margin: 0;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #356aa0 0%,#144b6d 100%);
+    background: @color1;
+    // background: linear-gradient(135deg, #356aa0 0%,#144b6d 100%);
     color: #fff;
     &.noscroll {
         overflow: hidden;

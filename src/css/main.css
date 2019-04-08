@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+/* Color Theme Swatches in Hex */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700|Playfair+Display:900');
 html {
   font-size: 10px;
 }
@@ -12,6 +13,7 @@ h2,
 h3,
 h4 {
   font-weight: 700;
+  font-family: 'Playfair Display', serif;
 }
 a {
   color: #fff;
@@ -66,15 +68,40 @@ section {
     width: 90%;
   }
 }
+.intro {
+  background-color: #F2D4C2;
+}
 .intro h1 {
   font-size: 7vw;
   line-height: 1;
   margin: 5vw 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  position: relative;
+  color: #010326;
+}
+.intro h1:before {
+  content: 'Social Media Strategist';
+  font-family: 'Poppins', sans-serif;
+  color: #A66151;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  top: -10px;
 }
 @media only screen and (max-width: 1023px)  {
   .intro h1 {
     font-size: 16vw;
   }
+}
+.info {
+  background-color: #010326;
+}
+.info h3 {
+  font-size: 4rem;
+  color: #F2D4C2;
 }
 .footer {
   position: absolute;
@@ -83,6 +110,7 @@ section {
   right: 0;
   font-size: 1.2rem;
   letter-spacing: 2px;
+  color: #F29494;
 }
 /*!
  * Font Awesome Free 5.8.1 by @fontawesome - https://fontawesome.com
@@ -4451,7 +4479,7 @@ body {
   margin: 0;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #356aa0 0%, #144b6d 100%);
+  background: #010326;
   color: #fff;
 }
 body.noscroll {

@@ -21,13 +21,40 @@ section {
 }
 
 .intro {
+    background-color: @color3;
+
     h1 {
         font-size: 7vw;
         line-height: 1;
         margin: 5vw 0;
+        font-family: @font-serif;
+        font-weight: 900;
+        position: relative;
+        color: @color1;
+
+        &:before {
+            content: 'Social Media Strategist';
+            font-family: @font-base;
+            color: @color4;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            position: absolute;
+            top: -10px;
+        }
         @media @mobile {
             font-size: 16vw;
         }
+    }
+}
+
+.info {
+    background-color: @color1;
+
+    h3 {
+        font-size: 4rem;
+        color: @color3;
     }
 }
 
@@ -38,4 +65,5 @@ section {
     right: 0;
     font-size: 1.2rem;
     letter-spacing: 2px;
+    color: @color5;
 }
