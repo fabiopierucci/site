@@ -1,0 +1,47 @@
+//Utils
+@import "vars";
+@import "typography";
+@import "animations";
+
+// layout
+@import "layout/page";
+
+// partials
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+// font-awesome
+@import "./node_modules/@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "./node_modules/@fortawesome/fontawesome-free/less/regular.less";
+@import "./node_modules/@fortawesome/fontawesome-free/less/solid.less";
+@import "./node_modules/@fortawesome/fontawesome-free/less/brands.less";
+@fa-font-path: "../webfonts";
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #356aa0 0%,#144b6d 100%);
+    color: #fff;
+    &.noscroll {
+        overflow: hidden;
+    }
+}
+
+.hidden {
+    display: none;
+}
+.clear {
+    clear: both;
+}
